@@ -1,9 +1,11 @@
 <?php
 	/*
 	 * Plugin Name: Climate Strike
-	 * Plugin URI: https://github.com/
-	 ' Description:
-	 * Version: 1.0.0
+	 * Plugin URI: https://github.com/iamwebrocker/wp-climatestrike/
+	 * Description: A small plugin to put your WordPress site on climate strike
+	 * Author: Tom Arnold
+	 * Author URI: https://www.webrocker.de/
+	 * Version: 1.0.1
 	 */
 
 	$strike = '2019-09-20';
