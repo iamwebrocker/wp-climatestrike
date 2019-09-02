@@ -6,7 +6,7 @@
 	 * Version: 1.0.0
 	 */
 
-	$strike = '2019-09-02';
+	$strike = '2019-09-20';
 	$today  = date('Y-m-d');
 	// @@TODO: make this from plugin settings:
 	$allowed_urls = array('/impressum/','/datenschutzerklaerung/');
