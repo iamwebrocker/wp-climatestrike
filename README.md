@@ -15,6 +15,6 @@ The HTML file is a copy of the placeholder.html in [Sebastian Gregers Kirby3 plu
 
 ## License
 
-wp-climatestrike is open-sourced software licensed under the MIT license. It is provided "as is" with no guarantee. Use it at your own risk and always test it yourself before using it in a production environment.
+wp-climatestrike is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT). It is provided "as is" with no guarantee. Use it at your own risk and always test it yourself before using it in a production environment.
 
-Copyright © 2019 Tom Arnold
+Copyright © 2019 [Tom Arnold](https://www.webrocker.de)
