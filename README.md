@@ -1,6 +1,6 @@
 # wp-climatestrike
 
-A small WordPress plugin to put your site on [climate strike](https://globalclimatestrike.net/) on
+A small WordPress plugin to put your site on [digital climate strike](https://digital.globalclimatestrike.net/) on
 Sept. 20th, 2019.
 
 ## Install
