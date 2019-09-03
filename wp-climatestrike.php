@@ -5,7 +5,7 @@
 	 * Description: A small plugin to put your WordPress site on climate strike
 	 * Author: Tom Arnold
 	 * Author URI: https://www.webrocker.de/
-	 * Version: 1.1.0
+	 * Version: 1.1.1
 	 */
 	function wbr_wpcs_redirect() {
 
@@ -17,7 +17,7 @@
 		$privacy_page_rel_url = substr($privacy_page_url,strlen($home_url),-1) .'/';
 
 		// @@TODO: make this from plugin settings:
-		$allowed_urls = array('/impressum/',$privacy_page_rel_url);
+		$allowed_urls = array('/wp-admin/','/impressum/',$privacy_page_rel_url);
 		$strike_page = 'climatestrike.html';
 		$current_url = $_SERVER['REQUEST_URI'];
 
