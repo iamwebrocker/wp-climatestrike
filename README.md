@@ -6,7 +6,7 @@ Sept. 20th, 2019.
 ## Install
 
 Copy the `wp-climatestrike` directory to your `wp-content/plugins` directory.
-Copy the file `wp-climatestrike/climatestrike.html` to your current theme directory and change it to your liking.
+Copy the file `wp-climatestrike/templates/climatestrike.html` to your current theme directory's root and change it to your liking.
 If you're ok with the default file, you won't need to copy it. The plugin will first look in the active theme for a file named `climatestrike.html`,
 and will fall back to the file inside the plugin directory.
 Activate the plugin through the admin panel.
