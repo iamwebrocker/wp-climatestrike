@@ -13,7 +13,7 @@ Activate the plugin through the admin panel.
 
 There is an array "allowed_urls" that's currently hard-coded. If the request uri matches these urls, the content is displayed.
 One of these urls is the "privacy policy" page that can be defined in WordPress. The other is hard coded to "/impressum/" currently, since those two
-are the legally required pages for sites in Germany.
+are the legally required pages for sites in Germany. The "/wp-admin/" url is added, too, else even the login to the backend would be "striked".
 
 ## Thanks
 
