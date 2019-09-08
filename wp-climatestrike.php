@@ -3,9 +3,10 @@
 	 * Plugin Name: Climate Strike
 	 * Plugin URI: https://github.com/iamwebrocker/wp-climatestrike/
 	 * Description: A small plugin to put your WordPress site on climate strike
-	 * Author: Tom Arnold
+	 * Author: Webrocker
 	 * Author URI: https://www.webrocker.de/
-	 * Version: 1.2.1
+	 * Version: 1.2.2
+	 * Text Domain: wbrwpcs
 	 */
 	if ( ! defined( 'ABSPATH' ) ) {
 		die( 'Invalid request.' );
@@ -66,7 +67,7 @@
 	function wbr_wpcs_add_settings_link($links) {
 		$url = admin_url( 'options-general.php?page=wp-climatestrike' );
 		$links = (array) $links;
-		$links[] = sprintf( '<a href="%s">%s</a>', $url, __( 'Settings', 'classic-editor' ) );
+		$links[] = sprintf( '<a href="%s">%s</a>', $url, __( 'Settings', 'wbrwpcs' ) );
 		return $links;
 	}
 	add_filter( 'plugin_action_links', 'wbr_wpcs_add_settings_link' );
