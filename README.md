@@ -15,6 +15,8 @@ There is an array "allowed_urls" that's currently hard-coded. If the request uri
 One of these urls is the "privacy policy" page that can be defined in WordPress. The other is hard coded to "/impressum/" currently, since those two
 are the legally required pages for sites in Germany. The "/wp-admin/" url is added, too, else even the login to the backend would be "striked".
 
+Changed in v1.2.0: Now the "allowed" URLs can be set via the plugin's settings. The privacy policy page is added as a default, if detected.
+
 ## Thanks
 
 The HTML file is a copy of the placeholder.html in [Sebastian Gregers Kirby3 plugin](https://github.com/sebastiangreger/kirby3-climatestrike).
