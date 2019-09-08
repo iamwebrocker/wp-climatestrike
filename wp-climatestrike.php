@@ -5,8 +5,12 @@
 	 * Description: A small plugin to put your WordPress site on climate strike
 	 * Author: Tom Arnold
 	 * Author URI: https://www.webrocker.de/
-	 * Version: 1.2.0
+	 * Version: 1.2.1
 	 */
+	if ( ! defined( 'ABSPATH' ) ) {
+		die( 'Invalid request.' );
+	}
+
 	function wbr_wpcs_redirect() {
 
 		$strike = '2019-09-20';
@@ -58,6 +62,14 @@
 		add_options_page(__('WP Climate Strike Settings','wbrwpcs'), __('WP Climate Strike','wbrwpcs'), 'manage_options', 'wp-climatestrike', 'wbr_wpcs_options_page');
 	}
 	add_action('admin_menu', 'wbr_wpcs_register_options_page');
+
+	function wbr_wpcs_add_settings_link($links) {
+		$url = admin_url( 'options-general.php?page=wp-climatestrike' );
+		$links = (array) $links;
+		$links[] = sprintf( '<a href="%s">%s</a>', $url, __( 'Settings', 'classic-editor' ) );
+		return $links;
+	}
+	add_filter( 'plugin_action_links', 'wbr_wpcs_add_settings_link' );
 
 	function wbr_wpcs_options_page() {
 ?>
