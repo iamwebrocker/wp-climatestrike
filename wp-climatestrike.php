@@ -5,7 +5,7 @@
 	 * Description: A small plugin to put your WordPress site on climate strike
 	 * Author: Webrocker
 	 * Author URI: https://www.webrocker.de/
-	 * Version: 1.2.3
+	 * Version: 1.2.4
 	 * Text Domain: wbrwpcs
 	 */
 	if ( ! defined( 'ABSPATH' ) ) {
@@ -74,16 +74,6 @@
 	}
 	add_filter( 'plugin_action_links', 'wbr_wpcs_add_settings_link',10,2 );
 
-function rrze_video_add_settings_link($links,$file)
-{
-    if( $file == plugin_basename(dirname(__DIR__).'/rrze-video.php') && function_exists( 'admin_url' ) ) {
-        $url = admin_url( 'options-general.php?page=rrze_video_settings' );
-        $links = (array) $links;
-        $links[] = sprintf( '<a href="%s">%s</a>', $url, __( 'Settings','rrze-video' ) );
-    }
-    return $links;
-}
-//
 	function wbr_wpcs_options_page() {
 ?>
 	<div class="wrap">
