@@ -3,6 +3,11 @@
 A small WordPress plugin to put your site on [digital climate strike](https://digital.globalclimatestrike.net/) on
 Sept. 20th, 2019.
 
+## PSA
+
+There's now an "official" [WP plugin by 'Fight For the Future'](https://wordpress.org/plugins/digital-climate-strike-wp/) with a lot of features, on the official WP-plugins directory.
+Since this here is my attempt to "scratch my own itch", you're probably be better off with the official version.
+
 ## Install
 
 Copy the `wp-climatestrike` directory to your `wp-content/plugins` directory.
@@ -11,7 +16,7 @@ If you're ok with the default file, you won't need to copy it. The plugin will f
 and will fall back to the file inside the plugin directory.
 Activate the plugin through the admin panel.
 
-There is an array "allowed_urls" that's currently hard-coded. If the request uri matches these urls, the content is displayed.
+There is an array "allowed_urls" <del>that's currently hard-coded</del>. If the request uri matches these urls, the content is displayed.
 One of these urls is the "privacy policy" page that can be defined in WordPress. The other is hard coded to "/impressum/" currently, since those two
 are the legally required pages for sites in Germany. The "/wp-admin/" url is added, too, else even the login to the backend would be "striked".
 
