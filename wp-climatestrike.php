@@ -5,7 +5,7 @@
 	 * Description: A small plugin to put your WordPress site on climate strike
 	 * Author: Webrocker
 	 * Author URI: https://www.webrocker.de/
-	 * Version: 1.2.2
+	 * Version: 1.2.3
 	 * Text Domain: wbrwpcs
 	 */
 	if ( ! defined( 'ABSPATH' ) ) {
@@ -64,14 +64,26 @@
 	}
 	add_action('admin_menu', 'wbr_wpcs_register_options_page');
 
-	function wbr_wpcs_add_settings_link($links) {
-		$url = admin_url( 'options-general.php?page=wp-climatestrike' );
-		$links = (array) $links;
-		$links[] = sprintf( '<a href="%s">%s</a>', $url, __( 'Settings', 'wbrwpcs' ) );
+	function wbr_wpcs_add_settings_link($links,$file) {
+		if( $file == plugin_basename(__FILE__) && function_exists( 'admin_url' ) ) {
+			$url = admin_url( 'options-general.php?page=wp-climatestrike' );
+			$links = (array) $links;
+			$links[] = sprintf( '<a href="%s">%s</a>', $url, __( 'Settings', 'wbrwpcs' ) );
+		}
 		return $links;
 	}
-	add_filter( 'plugin_action_links', 'wbr_wpcs_add_settings_link' );
+	add_filter( 'plugin_action_links', 'wbr_wpcs_add_settings_link',10,2 );
 
+function rrze_video_add_settings_link($links,$file)
+{
+    if( $file == plugin_basename(dirname(__DIR__).'/rrze-video.php') && function_exists( 'admin_url' ) ) {
+        $url = admin_url( 'options-general.php?page=rrze_video_settings' );
+        $links = (array) $links;
+        $links[] = sprintf( '<a href="%s">%s</a>', $url, __( 'Settings','rrze-video' ) );
+    }
+    return $links;
+}
+//
 	function wbr_wpcs_options_page() {
 ?>
 	<div class="wrap">
