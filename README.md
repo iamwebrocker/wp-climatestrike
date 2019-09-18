@@ -6,7 +6,7 @@ Sept. 20th, 2019.
 ## PSA
 
 There's now an "official" [WP plugin by 'Fight For the Future'](https://wordpress.org/plugins/digital-climate-strike-wp/) with a lot of features, on the official WP-plugins directory.
-Since this here is my attempt to "scratch my own itch", you're probably be better off with the official version.
+Since this here is my attempt to "scratch my own itch", you'll probably be better off with the official version.
 
 ## Install
 
