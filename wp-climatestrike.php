@@ -5,7 +5,7 @@
 	 * Description: A small plugin to put your WordPress site on climate strike
 	 * Author: Webrocker
 	 * Author URI: https://www.webrocker.de/
-	 * Version: 1.2.4
+	 * Version: 1.2.5
 	 * Text Domain: wbrwpcs
 	 */
 	if ( ! defined( 'ABSPATH' ) ) {
